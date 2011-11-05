@@ -17,7 +17,6 @@
     [_window release];
     [super dealloc];
     
-    // helo world
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
