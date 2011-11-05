@@ -12,7 +12,9 @@
 		65EDEAD31465D2250009AC84 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65EDEAD21465D2250009AC84 /* CoreGraphics.framework */; };
 		65EDEAD91465D2250009AC84 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65EDEAD71465D2250009AC84 /* InfoPlist.strings */; };
 		65EDEADB1465D2250009AC84 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EDEADA1465D2250009AC84 /* main.m */; };
-		65EDEADF1465D2250009AC84 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EDEADE1465D2250009AC84 /* AppDelegate.m */; };
+		65EDEADF1465D2250009AC84 /* GpsScraperAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EDEADE1465D2250009AC84 /* GpsScraperAppDelegate.m */; };
+		65EDEAFA1465D5C70009AC84 /* GpsScraperView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65EDEAF91465D5C70009AC84 /* GpsScraperView.xib */; };
+		65EDEAFE1465D5EF0009AC84 /* GpsScraperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EDEAFD1465D5EF0009AC84 /* GpsScraperViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +22,15 @@
 		65EDEACE1465D2250009AC84 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		65EDEAD01465D2250009AC84 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		65EDEAD21465D2250009AC84 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		65EDEAD61465D2250009AC84 /* GpsScraper-Info.plist */ = {isa = PBXFileReference; path = "GpsScraper-Info.plist"; sourceTree = "<group>"; };
+		65EDEAD61465D2250009AC84 /* GpsScraper-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GpsScraper-Info.plist"; sourceTree = "<group>"; };
 		65EDEAD81465D2250009AC84 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		65EDEADA1465D2250009AC84 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		65EDEADC1465D2250009AC84 /* GpsScraper-Prefix.pch */ = {isa = PBXFileReference; path = "GpsScraper-Prefix.pch"; sourceTree = "<group>"; };
-		65EDEADD1465D2250009AC84 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
-		65EDEADE1465D2250009AC84 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		65EDEADC1465D2250009AC84 /* GpsScraper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GpsScraper-Prefix.pch"; sourceTree = "<group>"; };
+		65EDEADD1465D2250009AC84 /* GpsScraperAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GpsScraperAppDelegate.h; sourceTree = "<group>"; };
+		65EDEADE1465D2250009AC84 /* GpsScraperAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GpsScraperAppDelegate.m; sourceTree = "<group>"; };
+		65EDEAF91465D5C70009AC84 /* GpsScraperView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GpsScraperView.xib; sourceTree = "<group>"; };
+		65EDEAFC1465D5EF0009AC84 /* GpsScraperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GpsScraperViewController.h; sourceTree = "<group>"; };
+		65EDEAFD1465D5EF0009AC84 /* GpsScraperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GpsScraperViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +77,11 @@
 		65EDEAD41465D2250009AC84 /* GpsScraper */ = {
 			isa = PBXGroup;
 			children = (
-				65EDEADD1465D2250009AC84 /* AppDelegate.h */,
-				65EDEADE1465D2250009AC84 /* AppDelegate.m */,
+				65EDEADD1465D2250009AC84 /* GpsScraperAppDelegate.h */,
+				65EDEADE1465D2250009AC84 /* GpsScraperAppDelegate.m */,
+				65EDEAF91465D5C70009AC84 /* GpsScraperView.xib */,
+				65EDEAFC1465D5EF0009AC84 /* GpsScraperViewController.h */,
+				65EDEAFD1465D5EF0009AC84 /* GpsScraperViewController.m */,
 				65EDEAD51465D2250009AC84 /* Supporting Files */,
 			);
 			path = GpsScraper;
@@ -141,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65EDEAD91465D2250009AC84 /* InfoPlist.strings in Resources */,
+				65EDEAFA1465D5C70009AC84 /* GpsScraperView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +161,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				65EDEADB1465D2250009AC84 /* main.m in Sources */,
-				65EDEADF1465D2250009AC84 /* AppDelegate.m in Sources */,
+				65EDEADF1465D2250009AC84 /* GpsScraperAppDelegate.m in Sources */,
+				65EDEAFE1465D5EF0009AC84 /* GpsScraperViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +264,7 @@
 				65EDEAE41465D2250009AC84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
